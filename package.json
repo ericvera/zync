@@ -1,0 +1,39 @@
+{
+  "name": "zync",
+  "author": "Eric Vera",
+  "repository": "https://github.com/ericvera/zync",
+  "version": "0.0.1",
+  "description": "Zync keeps shared code in sync with multiple projects in a monorepo.",
+  "main": "./lib/index.js",
+  "bin": {
+    "zync": "./lib/index.js"
+  },
+  "private": false,
+  "scripts": {
+    "build": "tsc -p .",
+    "local:install": "sudo npm install -g",
+    "local:uninstall": "sudo npm uninstall -g",
+    "dev:update-json-schema": "ts-interface-builder ./helpers/config.ts"
+  },
+  "dependencies": {
+    "@types/chokidar": "^2.1.3",
+    "@types/figlet": "^1.2.0",
+    "@types/fs-extra": "^9.0.2",
+    "@types/node": "^14.11.8",
+    "chalk": "^4.1.0",
+    "chokidar": "^3.4.3",
+    "commander": "^6.1.0",
+    "figlet": "^1.5.0",
+    "fs-extra": "^9.0.1",
+    "globby": "^11.0.1",
+    "ts-interface-checker": "^0.1.13",
+    "typescript": "^4.0.3"
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true
+  },
+  "devDependencies": {
+    "ts-interface-builder": "^0.2.2"
+  }
+}
