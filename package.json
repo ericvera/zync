@@ -2,7 +2,7 @@
   "name": "zync",
   "author": "Eric Vera",
   "repository": "https://github.com/ericvera/zync",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Zync keeps shared code in sync with multiple projects in a monorepo.",
   "main": "./lib/index.js",
   "bin": {
