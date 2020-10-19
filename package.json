@@ -14,7 +14,7 @@
     "local:install": "sudo npm install -g",
     "local:uninstall": "sudo npm uninstall -g",
     "dev:update-json-schema": "ts-interface-builder ./helpers/config.ts",
-    "publish": "npm publish"
+    "npm:publish": "npm version patch && npm publish"
   },
   "dependencies": {
     "@types/chokidar": "^2.1.3",
